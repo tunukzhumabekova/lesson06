@@ -120,7 +120,7 @@ DELETE  FROM people WHERE age < 20;
 SELECT * FROM people ORDER BY height DESC LIMIT 3;
 SELECT * FROM people where ismarried=true ORDER BY weight asc LIMIT 1;
 SELECT avg(age )from  people where ismarried=true;
-SELECT avg(weight)from  people where occupation='Professor';
+SELECT sum(weight)from  people where occupation='Professor';
 SELECT *FROM people WHERE email  NOT LIKE '%@gmail.com';
 SELECT *FROM people WHERE occupation ='developer'And age =40;
 SELECT DISTINCT nationality FROM people;
